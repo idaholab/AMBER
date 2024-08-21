@@ -1,0 +1,2050 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/idaholab/AMBER/"
+     xml:base="https://github.com/idaholab/AMBER/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://github.com/idaholab/AMBER/">
+        <owl:versionIRI rdf:resource="https://github.com/idaholab/AMBER/0.1"/>
+        <obo:IAO_0000115>GEM is a data model that acts as a common base for engineering data sources and functionalities associated to ensure a seamless flow of data and their methods.</obo:IAO_0000115>
+        <dc:contributor>Ahmad Al Rashdan, INL</dc:contributor>
+        <dc:contributor>Brennan Harris, INL</dc:contributor>
+        <dc:contributor>Christopher Ritter, INL</dc:contributor>
+        <dc:contributor>Jacob Settle, Curtiss-Wright</dc:contributor>
+        <dc:contributor>Jeren Browning, INL</dc:contributor>
+        <dc:contributor>Jim Gracely, Curtiss-Wright</dc:contributor>
+        <rdfs:comment xml:lang="en">BSD License Clause, Copyright 2021 Idaho National Laboratory</rdfs:comment>
+        <rdfs:comment xml:lang="en">This data model (ontology) makes use of BFO. You can find the BFO project site at  https://github.com/BFO-ontology/BFO.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This data model (ontology) makes use of LML. You can find LML at http://www.lifecyclemodeling.org/</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">example of usage</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">editor note</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">term editor</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">alternative term</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">definition source</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/base_profile -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/base_profile">
+        <obo:IAO_0000115>The base_profile annotation indicates that the class is a part of DIAMOND&apos;s foundation of core classes (primarily from BFO and LML), upon which all other classes rely.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">base_profile</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/profile_property"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/calibration_profile -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/calibration_profile">
+        <obo:IAO_0000115>The calibration_profile indicates that the class is used for calibration purposes within a nuclear reactor facility.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">calibration_profile</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/profile_property"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/clearnace_order_profile -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/clearnace_order_profile">
+        <obo:IAO_0000115>The clearance_order_profile indicates that the class is used for clearance orders within a nuclear reactor facility.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">clearance_order_profile</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/profile_property"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/condition_reporting_profile -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/condition_reporting_profile">
+        <obo:IAO_0000115>The condition_reporting_profile indicates that the class is used for condition reporting within a nuclear reactor facility.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">condition_reporting_profile</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/profile_property"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/documentation_profile -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/documentation_profile">
+        <obo:IAO_0000115>The documentation_profile indicates that the class is used for documentation purposes within a nuclear reactor facility.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">documentation_profile</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/profile_property"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dynamic_instruction_profile -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/dynamic_instruction_profile">
+        <obo:IAO_0000115>The dynamic_instruction_profile indicates that the class is used for dynamic instructions (smart procedures) within a work order or similar task.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">dynamic_instruction_profile</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/profile_property"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/engineer_notebook_profile -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/engineer_notebook_profile">
+        <obo:IAO_0000115>The engineer_notebook_profile indicates that the class is used for engineer notebook purposes within a nuclear reactor facility.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">engineer_notebook_profile</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/profile_property"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/equipment_performance_testing_profile -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/equipment_performance_testing_profile">
+        <obo:IAO_0000115>The equipment_performance_testing_profile indicates that the class is used for performance testing purposes within a nuclear reactor facility.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">equipment_performance_testing_profile</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/profile_property"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/logistics_profile -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/logistics_profile">
+        <obo:IAO_0000115>The logistics_profile indicates that the class is used for logistics purposes within a nuclear reactor facility.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">logistics_profile</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/profile_property"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/maintenance_profile -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/maintenance_profile">
+        <obo:IAO_0000115>The maintenance_profile indicates that the class is used for maintenance purposes within a nuclear reactor facility.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">maintenance_profile</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/profile_property"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/operating_experience_profile -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/operating_experience_profile">
+        <obo:IAO_0000115>The operating_experience_profile indicates that the class is used for operating experience purposes within a nuclear reactor facility.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">operating_experience_profile</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/profile_property"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/operator_round_profile -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/operator_round_profile">
+        <obo:IAO_0000115>The operator_round_profile indicates that the class is used for operator rounds within a nuclear reactor facility.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">operator_round_profile</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/profile_property"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/process_instruments_control_profile -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/process_instruments_control_profile">
+        <obo:IAO_0000115>The process_instruments_control_profile indicates that the class is used for process instrumentation purposes within a nuclear reactor facility.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">process_instruments_control_profile</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/profile_property"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/profile -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/profile">
+        <obo:IAO_0000115>The profile annotation is used in conjunction with a profile_property annotation to provide a common label to a class to enable grouping together classes by some logical function, process, etc.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">profile</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/profile_property -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/profile_property">
+        <obo:IAO_0000115>The profile_property annotation contains children annotations which are used as the values for the profile annotation.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">profile_property</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/radiation_protection_profile -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/radiation_protection_profile">
+        <obo:IAO_0000115>The radiation_protection_profile indicates that the class is used for radiation protection purposes within a nuclear reactor facility.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">radiation_protection_profile</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/profile_property"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/schedule_profile -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/schedule_profile">
+        <obo:IAO_0000115>The schedule_profile indicates that the class is used for scheduling.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">schedule_profile</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/profile_property"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/security_profile -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/security_profile">
+        <obo:IAO_0000115>The security_profile indicates that the class is used for security purposes within a nuclear reactor facility.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">security_profile</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/profile_property"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/work_order_profile -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/work_order_profile">
+        <obo:IAO_0000115>The work_order_profile indicates that the class is used for work order purposes within a nuclear reactor facility.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">work_order_profile</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/profile_property"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#List -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#ID -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#ID"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#IDREF -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#IDREF"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- nuclear:000010 -->
+
+    <owl:ObjectProperty rdf:about="nuclear:000010">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="nuclear:000133"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <owl:inverseOf rdf:resource="nuclear:000133"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000112>Reactor Building locates Reactor</obo:IAO_0000112>
+        <obo:IAO_0000115>A locates B if B is contained within a subset of the spatial region occupied by A at some time t.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:isDefinedBy>http://www.lifecyclemodeling.org/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">locates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- nuclear:000011 -->
+
+    <owl:ObjectProperty rdf:about="nuclear:000011">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="nuclear:000137"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <owl:inverseOf rdf:resource="nuclear:000137"/>
+        <obo:IAO_0000112>Role performs Action</obo:IAO_0000112>
+        <obo:IAO_0000115>A performs B if B is a process and A is a continuant entity and A participates in or is involved in B.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:isDefinedBy>http://www.lifecyclemodeling.org/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">performs</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- nuclear:000133 -->
+
+    <owl:ObjectProperty rdf:about="nuclear:000133">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000112>Reactor located at Reactor Building</obo:IAO_0000112>
+        <obo:IAO_0000115>A located at B if A is contained within a subset of the spatial region occupied by B at some time t.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:isDefinedBy>http://www.lifecyclemodeling.org/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">locatedAt</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- nuclear:000137 -->
+
+    <owl:ObjectProperty rdf:about="nuclear:000137">
+        <obo:IAO_0000112>Action performed by Role</obo:IAO_0000112>
+        <obo:IAO_0000115>A is performed by B if A is a process (or action) and B is a continuant (non-temporal) entity and B participates in or is involved in A.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:isDefinedBy>http://www.lifecyclemodeling.org/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">performedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- nuclear:000184 -->
+
+    <owl:ObjectProperty rdf:about="nuclear:000184">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="nuclear:000185"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <owl:inverseOf rdf:resource="nuclear:000185"/>
+        <obo:IAO_0000112>Incoming Receipt references Purchase Order</obo:IAO_0000112>
+        <obo:IAO_0000115>Denotes that the entity refers to some other entity, usually an artifact/generically dependent continuant or asset.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:isDefinedBy>http://www.lifecyclemodeling.org/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">references</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- nuclear:000185 -->
+
+    <owl:ObjectProperty rdf:about="nuclear:000185">
+        <obo:IAO_0000112>Purchase Order referenced by Incoming Receipt</obo:IAO_0000112>
+        <obo:IAO_0000115>Denotes that the entity (usually an artifact or asset) is referred to by some other entity.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:isDefinedBy>http://www.lifecyclemodeling.org/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">referencedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- nuclear:000217 -->
+
+    <owl:ObjectProperty rdf:about="nuclear:000217">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="nuclear:000218"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <owl:inverseOf rdf:resource="nuclear:000218"/>
+        <obo:IAO_0000112>Questionnaire decomposed by Survey Item</obo:IAO_0000112>
+        <obo:IAO_0000115>Identifies the children of some entity.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:comment>Parent child relationship that subsumes every other wording for a parent/child relationship (e.g. part of, composed of, etc.)</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.lifecyclemodeling.org/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">decomposedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- nuclear:000218 -->
+
+    <owl:ObjectProperty rdf:about="nuclear:000218">
+        <obo:IAO_0000112>Survey Item decomposes Questionnaire</obo:IAO_0000112>
+        <obo:IAO_0000115>Identifies the parent of this entity.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:isDefinedBy>http://www.lifecyclemodeling.org/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">decomposes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- nuclear:000220 -->
+
+    <owl:ObjectProperty rdf:about="nuclear:000220">
+        <obo:IAO_0000112>Control Rod specified by Mass</obo:IAO_0000112>
+        <obo:IAO_0000115>Denotes a relationship to some quality using the Characteristic naming convention from LML (specified by).</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:isDefinedBy>http://www.lifecyclemodeling.org/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">specifiedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- nuclear:000285 -->
+
+    <owl:ObjectProperty rdf:about="nuclear:000285">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <obo:IAO_0000112>Plant Documentation relates Document Type</obo:IAO_0000112>
+        <obo:IAO_0000115>A generic relationship to be used when other available relationships are insufficient. Can often be used for relationships between entities that have the same LML parent (e.g. artifact, asset).</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:isDefinedBy>http://www.lifecyclemodeling.org/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">relates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- nuclear:000289 -->
+
+    <owl:ObjectProperty rdf:about="nuclear:000289">
+        <obo:IAO_0000112>Smoke Detector has role Fire Detector Role</obo:IAO_0000112>
+        <obo:IAO_0000115>Denotes that the entity contains some role.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">hasRole</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- nuclear:000294 -->
+
+    <owl:ObjectProperty rdf:about="nuclear:000294">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="nuclear:000295"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <owl:inverseOf rdf:resource="nuclear:000295"/>
+        <obo:IAO_0000112>Action generates Transition Template</obo:IAO_0000112>
+        <obo:IAO_0000115>Denotes that some entity has an output that is a result of some class or process.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:isDefinedBy>http://www.lifecyclemodeling.org/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">generates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- nuclear:000295 -->
+
+    <owl:ObjectProperty rdf:about="nuclear:000295">
+        <obo:IAO_0000112>Transition Template generated by Action</obo:IAO_0000112>
+        <obo:IAO_0000115>Denotes that some class is the receiver of some process or output generated by some other specified entity.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:isDefinedBy>http://www.lifecyclemodeling.org/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">generatedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- nuclear:000653 -->
+
+    <owl:ObjectProperty rdf:about="nuclear:000653">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="nuclear:000654"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <owl:inverseOf rdf:resource="nuclear:000654"/>
+        <obo:IAO_0000112>Risk caused by Action</obo:IAO_0000112>
+        <obo:IAO_0000115>Caused by is a relationship for the risk class that denotes some asset, artifact, etc. that causes the risk.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:isDefinedBy>http://www.lifecyclemodeling.org/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">causedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- nuclear:000654 -->
+
+    <owl:ObjectProperty rdf:about="nuclear:000654">
+        <obo:IAO_0000112>Action causes Risk</obo:IAO_0000112>
+        <obo:IAO_0000115>Causes is a relationship for a class that relates it to a risk that it may produce.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:isDefinedBy>http://www.lifecyclemodeling.org/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">causes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- nuclear:000655 -->
+
+    <owl:ObjectProperty rdf:about="nuclear:000655">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="nuclear:000656"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <owl:inverseOf rdf:resource="nuclear:000656"/>
+        <obo:IAO_0000112>Risk mitigated by Opportunity</obo:IAO_0000112>
+        <obo:IAO_0000115>Denotes that a risk is mitigated (or that the probability or cost is reduced) by some entity.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:isDefinedBy>http://www.lifecyclemodeling.org/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">mitigatedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- nuclear:000656 -->
+
+    <owl:ObjectProperty rdf:about="nuclear:000656">
+        <obo:IAO_0000112>Opportunity mitigates Risk</obo:IAO_0000112>
+        <obo:IAO_0000115>Denotes that some entity mitigates (reduces the probability or cost) of some risk.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:isDefinedBy>http://www.lifecyclemodeling.org/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">mitigates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- nuclear:000672 -->
+
+    <owl:ObjectProperty rdf:about="nuclear:000672">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="nuclear:000717"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <owl:inverseOf rdf:resource="nuclear:000717"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000112>Process includes Action</obo:IAO_0000112>
+        <obo:IAO_0000115>The includes relationship denotes that the owner of the relationship includes the indicated entity but is not a parent to it.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">includes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- nuclear:000717 -->
+
+    <owl:ObjectProperty rdf:about="nuclear:000717">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000112>Action included by Process</obo:IAO_0000112>
+        <obo:IAO_0000115>The included by relationship denotes that the owner of the relationship is included within the indicated entity but is not a child of it.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">includedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- nuclear:001071 -->
+
+    <owl:ObjectProperty rdf:about="nuclear:001071">
+        <obo:IAO_0000115>Satisfied by is a relationship between requirements and also decisions, indicating some other entity that satisfies the restriction, demand, or objective imposed by the current entity.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:isDefinedBy>http://www.lifecyclemodeling.org/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">satisfiedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- nuclear:001072 -->
+
+    <owl:ObjectProperty rdf:about="nuclear:001072">
+        <obo:IAO_0000115>Satisfies is a relationship between requirements and also decisions, indicating that this entity satisfies the restriction, demand, or objective imposed by some other entity.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:isDefinedBy>http://www.lifecyclemodeling.org/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">satisfies</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- nuclear:001282 -->
+
+    <owl:ObjectProperty rdf:about="nuclear:001282">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="nuclear:001283"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <owl:inverseOf rdf:resource="nuclear:001283"/>
+        <obo:IAO_0000112>Asset occurs Process</obo:IAO_0000112>
+        <obo:IAO_0000115>Occurs is a relationship that relates some entity to some temporal entity to identify the time or timespan in which the entity or some part of it happens.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:isDefinedBy>http://www.lifecyclemodeling.org/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">occurs</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- nuclear:001283 -->
+
+    <owl:ObjectProperty rdf:about="nuclear:001283">
+        <obo:IAO_0000112>Process occurredBy Asset</obo:IAO_0000112>
+        <obo:IAO_0000115>Occured by is a relationship that relates some temporal entity to some other entity to identify the time or timespan which causes the entity or some part of it to happen.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:isDefinedBy>http://www.lifecyclemodeling.org/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">occurredBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/abbreviation -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/AMBER/abbreviation">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <obo:IAO_0000115>Standard abbreviated string, usually for a unit definition</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label>abbreviation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/composition -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/AMBER/composition">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label xml:lang="en">composition</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/composition_type -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/AMBER/composition_type">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000276"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>mass</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>volume</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label xml:lang="en">composition type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/default -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/AMBER/default">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label>default</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/form_method -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/AMBER/form_method">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000276"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>extrude</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>revolve</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label xml:lang="en">form method</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/meaurement_type -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/AMBER/meaurement_type">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000276"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>physical</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>simulated</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <obo:IAO_0000115>Whether a measurement came from a physically-measured sample or was predicted by a simulation</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label>measurement type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/model_origin -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/AMBER/model_origin">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000276"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>data</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>study</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <obo:IAO_0000115>Indicates whether a model was generated from a parameter study or from uploaded data</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label>model origin</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/outlier -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/AMBER/outlier">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000410"/>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label>outlier</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/parameter_type -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/AMBER/parameter_type">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000276"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>boolean</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>number</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>string</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label xml:lang="en">parameter type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/test_value -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/AMBER/test_value">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000410"/>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label>test value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/x -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/AMBER/x">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label xml:lang="en">x</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/y -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/AMBER/y">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label xml:lang="en">y</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/z -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/AMBER/z">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label xml:lang="en">z</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:000134 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:000134">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:000276 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:000276">
+        <obo:IAO_0000115>An enumeration is a property that is made up of a range of static, user-defined values.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">enumeration</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:000278 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:000278">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000411"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <obo:IAO_0000115>Creation date is a property that indicates the creation timestamp for some entity.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">creation date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:000279 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:000279">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000411"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <obo:IAO_0000115>Modified date is a property that indicates the most recently modified time for some entity.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">modified date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:000329 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:000329">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">status</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:000410 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:000410">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">boolean</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:000411 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:000411">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">datetime</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:000412 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:000412">
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:000413 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:000413">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">string</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:000414 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:000414">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000411"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <obo:IAO_0000115>The timestamp at which a measurement was taken.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">measurement date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:000465 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:000465">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">minimum value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:000466 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:000466">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">maximum value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:000468 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:000468">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:000477 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:000477">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <obo:IAO_0000118>identifier</obo:IAO_0000118>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001001 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001001">
+        <obo:IAO_0000115>Category for data properties that do not use one of the other defined types.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">other</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000134"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000468"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000477"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An entity is anything that exists or has existed or will exist. (BFO definition)</obo:IAO_0000115>
+        <obo:profile rdf:resource="http://purl.obolibrary.org/obo/base_profile"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">Entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:IAO_0000115 xml:lang="en">A non-temporal entity [BFO:continuant] is an entity that persists, endures, or continues to exist through time while maintaining its identity. (BFO definition)</obo:IAO_0000115>
+        <obo:profile rdf:resource="http://purl.obolibrary.org/obo/base_profile"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">NonTemporalEntity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <obo:IAO_0000115 xml:lang="en">A temporal entity [BFO:occurrent] is an entity that unfolds itself in time or it is the instantaneous boundary of such an entity (for example a beginning or an ending) or it is a temporal or spatiotemporal region which such an entity occupies. (BFO definition)</obo:IAO_0000115>
+        <obo:profile rdf:resource="http://purl.obolibrary.org/obo/base_profile"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">TemporalEntity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <obo:IAO_0000112 xml:lang="en">a chair</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a spatial region</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an organization or department</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A physical entity [BFO:independent continuant] is a non-temporal entity [BFO:continuant] which is such that there is no entiy c and time t such that the physical entity depends on c at t. (BFO definition)</obo:IAO_0000115>
+        <obo:profile rdf:resource="http://purl.obolibrary.org/obo/base_profile"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">PhysicalEntity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+        <obo:IAO_0000115 xml:lang="en">A spatial region is an immaterial entity that is a continuant part of space R as defined relative to some frame R. (BFO definition])</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">SpatialRegion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000028"/>
+        <obo:IAO_0000112 xml:lang="en">an infinitely thin plane in space.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the surface of a sphere-shaped part of space</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A two-dimensional spatial region is a spatial region that is of two dimensions. (BFO definition)</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">TwoDimensionalSpatialRegion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:IAO_0000115 xml:lang="en">A process is a temporal entity [BFO:occurrent] that has temporal proper parts for some time t, and depends on some material entity at t. (BFO definition)</obo:IAO_0000115>
+        <obo:profile rdf:resource="http://purl.obolibrary.org/obo/base_profile"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <obo:IAO_0000115 xml:lang="en">A characteristic [BFO:specifically dependent continuant] is a non-temporal entity [BFO:continuant] &amp; there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (BFO definition)</obo:IAO_0000115>
+        <obo:profile rdf:resource="http://purl.obolibrary.org/obo/base_profile"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">Characteristic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000028"/>
+        <obo:IAO_0000112 xml:lang="en">an edge of a cube-shaped portion of space.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A one-dimensional spatial region is a line or aggregate of lines stretching from one point in space to another. (BFO definition)</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">OneDimensionalSpatialRegion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        <obo:IAO_0000112 xml:lang="en">a cube-shaped region of space</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A three-dimensional spatial region is a spatial region that is of three dimensions. (BFO definition)</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">ThreeDimensionalSpatialRegion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <obo:IAO_0000112 xml:lang="en">digital artifacts, such as the pdf on your laptop</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An information entity [BFO:generically dependent continuant] is a non-temporal entiy [BFO:continuant] that depends on one or more other entities. (BFO definition)</obo:IAO_0000115>
+        <obo:profile rdf:resource="http://purl.obolibrary.org/obo/base_profile"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">InformationEntity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:IAO_0000115 xml:lang="en">A process boundary is a temporal part of a process that has no proper temporal parts. (BFO definition)</obo:IAO_0000115>
+        <obo:profile rdf:resource="http://purl.obolibrary.org/obo/base_profile"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">ProcessBoundary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+        <obo:IAO_0000112 xml:lang="en">a human being</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a photon</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an aggregate of human beings</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A material entity is a physical entity [BFO:independent continuant] that has some portion of matter as proper or improper continuant part. (BFO definition)</obo:IAO_0000115>
+        <obo:profile rdf:resource="http://purl.obolibrary.org/obo/base_profile"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">MaterialEntity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000141 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000141">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <obo:IAO_0000115 xml:lang="en">Immaterial entities are divided into two subgroups:boundaries and sites, which bound, or are demarcated in relation, to material entities, and which can thus change location, shape and size as their material hosts move or change shape or size (for example: your nasal passage; the hold of a ship; the boundary of Wales (which moves with the rotation of the Earth) (BFO definition)</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">ImmaterialEntity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <obo:IAO_0000112 xml:lang="en">Examples of information content entites include journal articles, data, graphical layouts, and graphs.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An information content entity is an information entiy [BFO:generically dependent continuant] that contains some data and relies on some other entiy (typically an information entity) for its existence and/or access.</obo:IAO_0000115>
+        <obo:profile rdf:resource="http://purl.obolibrary.org/obo/base_profile"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:label xml:lang="en">InformationContentEntity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/BooleanValue -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/AMBER/BooleanValue">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/AMBER/Parameter"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000218"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://github.com/idaholab/AMBER/Parameter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000410"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An instance of value of type boolean.</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label xml:lang="en">BooleanValue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/BuildInstance -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/AMBER/BuildInstance">
+        <rdfs:subClassOf rdf:resource="nuclear:000125"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/BooleanValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/FloatValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/StringValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000294"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/ResultantValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000295"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/ManufacturingProcess"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000295"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/SampleGeometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000295"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://github.com/idaholab/AMBER/Compound"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An instance of a manufacturing process that results in a material sample.</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label xml:lang="en">BuildInstance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/Compound -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/AMBER/Compound">
+        <rdfs:subClassOf rdf:resource="nuclear:000125"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/MaterialConstituent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/AMBER/composition_type"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A compound of material constituents.</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label xml:lang="en">Compound</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/Coordinate -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/AMBER/Coordinate">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000184"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/Coordinate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/AMBER/x"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/AMBER/y"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/AMBER/z"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An x, y, z float value set that defines a location in 3D space</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label xml:lang="en">Coordinate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/FileGeometry -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/AMBER/FileGeometry">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/AMBER/SampleGeometry"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000218"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/SampleGeometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A 3D geometric definition referencing a tesselated geometry file.</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label xml:lang="en">FileGeometry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/FloatValue -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/AMBER/FloatValue">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/AMBER/Parameter"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000218"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://github.com/idaholab/AMBER/Parameter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000412"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An instance of value of type float.</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label xml:lang="en">NumberValue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/ManufacturingProcess -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/AMBER/ManufacturingProcess">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/MaterialType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An accumulation of MaterialTypes, ManufacturingSubprocesses, and ManufacturingSettings that define and constrain a manufacturing method.</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label xml:lang="en">ManufacturingProcess</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/ManufacturingSetting -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/AMBER/ManufacturingSetting">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/Parameter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000218"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/ManufacturingProcess"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/AMBER/default"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A time-independent value of a manufacturing process that is parameterized from one build to another.</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label xml:lang="en">ManufacturingSetting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/ManufacturingSubprocess -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/AMBER/ManufacturingSubprocess">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/AMBER/ManufacturingProcess"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/Parameter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000218"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/ManufacturingProcess"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/AMBER/default"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A time-dependent value of a manufacturing process that is parameterized from one build to another.</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label xml:lang="en">ManufacturingSubprocess</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/Material -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/AMBER/Material">
+        <rdfs:subClassOf rdf:resource="nuclear:000125"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/BooleanValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/FloatValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/MaterialType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/StringValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A feedstock provided to a manufacturing process to create a sample.</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label xml:lang="en">Material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/MaterialConstituent -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/AMBER/MaterialConstituent">
+        <rdfs:subClassOf rdf:resource="nuclear:000125"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000218"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/Compound"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://github.com/idaholab/AMBER/Material"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/AMBER/composition"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A material consituent that has a relative share of mass or volume in a compound.</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label xml:lang="en">MaterialConstituent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/MaterialType -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/AMBER/MaterialType">
+        <rdfs:subClassOf rdf:resource="nuclear:000125"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000184"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/Parameter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/Parameter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A description of the necessary and optional parameters that define a type of material (e.g. a ceramic, a metal, an oxide).</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label xml:lang="en">MaterialType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/Parameter -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/AMBER/Parameter">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/Unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/AMBER/parameter_type"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A quantity whose value is selected for the particular circumstances and in relation to which other variable quantities may be expressed.</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label xml:lang="en">Parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/ParameterStudy -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/AMBER/ParameterStudy">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/BuildInstance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/Resultant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000294"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/PredictiveModel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The study of the effects of manufacturing process parameters on the resultant sample performance.</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label xml:lang="en">ParameterStudy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/ParameterStudyRecord -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/AMBER/ParameterStudyRecord">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000184"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/BuildInstance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/BooleanValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/FloatValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/StringValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000218"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/ParameterStudy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000220"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/Parameter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The record of a build instance and the parameters that defined it along with the sample&apos;s recorded performance.</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label xml:lang="en">ParameterStudyRecord</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/PredictiveModel -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/AMBER/PredictiveModel">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/PredictiveModelOutput"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/PredictiveModelParameter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000295"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/ParameterStudy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/AMBER/model_origin"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000329"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A computational model that predicts for a sample output using given inputs</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label>PredictiveModel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/PredictiveModelOutput -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/AMBER/PredictiveModelOutput">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000218"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/PredictiveModel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000278"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000279"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An output expected from a predictive model</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label>PredictiveModelOutput</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/PredictiveModelParameter -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/AMBER/PredictiveModelParameter">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000218"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/PredictiveModel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000465"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000466"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An input to a predictive model along with its bounds</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label>PredictiveModelParameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/ProfileGeometry -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/AMBER/ProfileGeometry">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/AMBER/SampleGeometry"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/Coordinate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000218"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/SampleGeometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000295"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/Coordinate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/AMBER/form_method"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A 3D geometric definition made up of coordinates that are either revolved or extruded.</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label xml:lang="en">ProfileGeometry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/Resultant -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/AMBER/Resultant">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/Parameter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/AMBER/meaurement_type"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A measureable value resulting from a build</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label>Resultant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/ResultantValue -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/AMBER/ResultantValue">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/AMBER/Resultant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/BooleanValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/FloatValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/StringValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000220"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/Resultant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000295"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://github.com/idaholab/AMBER/BuildInstance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/AMBER/outlier"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/AMBER/test_value"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The resultant value defined by a build</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label>ResultantValue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/SampleGeometry -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/AMBER/SampleGeometry">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/FileGeometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/ProfileGeometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The preform geometry of a manufacturing build instance.</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label xml:lang="en">SampleGeometry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/StringValue -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/AMBER/StringValue">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/AMBER/Parameter"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000218"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://github.com/idaholab/AMBER/Parameter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000413"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An instance of value of type string.</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label xml:lang="en">StringValue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/Unit -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/AMBER/Unit">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/AMBER/abbreviation"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A unit to label parameter values in such a way that the equations relating the numerical values expressed in the units of the system have exactly the same form.</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label xml:lang="en">Unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- nuclear:000125 -->
+
+    <owl:Class rdf:about="nuclear:000125">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000112>Infrared Sensor, Accounting Department</obo:IAO_0000112>
+        <obo:IAO_0000115>Specifies an object, person, or organization that performs an action, such as a system, subsystem, component, or element. (LML definition)</obo:IAO_0000115>
+        <obo:profile rdf:resource="http://purl.obolibrary.org/obo/base_profile"/>
+        <rdfs:isDefinedBy>http://www.lifecyclemodeling.org/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Asset</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
